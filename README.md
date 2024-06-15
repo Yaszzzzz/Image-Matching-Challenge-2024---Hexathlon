@@ -1,28 +1,45 @@
-# Image Matching Challenge 2024 - Hexathlon
+Image Matching Challenge 2024 - Hexathlon
+Overview
+Welcome to my participation in the Image Matching Challenge 2024 - Hexathlon on Kaggle. This project focuses on reconstructing 3D scenes from 2D images across six different domains, using computer vision techniques such as feature extraction and structure-from-motion (SfM).
 
-Welcome to the Image Matching Challenge 2024 - Hexathlon project repository. This repository contains the code and resources used to participate in the competition. The goal of this competition is to reconstruct 3D scenes from 2D images across six different domains, each presenting unique challenges in computer vision and structure from motion (SfM).
+Project Description
+In this project, I participated in the Image Matching Challenge 2024 - Hexathlon on Kaggle. The goal was to reconstruct 3D scenes from 2D images using advanced computer vision techniques. Key aspects of the project include:
 
-## Project Structure
+Data Handling: Utilizing provided datasets containing images and metadata crucial for training and evaluation.
+Feature Extraction: Implementing scripts to extract keypoints and descriptors from images.
+Image Matching: Developing algorithms to find correspondences between images based on extracted features.
+3D Reconstruction: Using tools like PyColmap to reconstruct 3D scenes from matched image pairs.
+Evaluation: Assessing the quality of reconstructions against ground truth using specified metrics.
+Project Structure
+The project is structured into several components:
 
-- **Data:** Contains the dataset provided for the competition, including images and metadata.
-- **Code:** This directory houses all the Python scripts and notebooks used for feature extraction, matching, and 3D reconstruction.
-- **Models:** Placeholder for any trained models or pre-trained weights used during the competition.
-- **Documentation:** Contains additional documents such as this README, licenses, and any other relevant information.
+Data: Contains datasets, annotations, and metadata used for training and evaluation.
+Code: Includes scripts and notebooks for feature extraction, image matching, and 3D reconstruction.
+Kaggle Kernel: Utilized Kaggle kernels for computation, due to constraints on local resources.
+Setup and Usage
+Setup Instructions
+To run the code locally, follow these steps:
 
-## Setup
+Clone the repository:
 
-### Prerequisites
+bash
+Copy code
+git clone https://github.com/your-username/image-matching-challenge.git
+cd image-matching-challenge
+Install dependencies:
 
-- Python 3.x
-- PyTorch
-- Kornia
-- PyColmap
-- Other Python packages as listed in `requirements.txt`
+bash
+Copy code
+pip install -r requirements.txt
+Adjust configurations and paths as necessary for your environment.
 
-### Installation
-
-Clone this repository to your local machine:
-
-```bash
-git clone https://github.com/your-username/image-matching-2024.git
-cd image-matching-2024
+Usage
+Data Preparation: Ensure datasets are organized as expected.
+Feature Extraction: Run feature extraction scripts to obtain keypoints and descriptors from images.
+Image Matching: Execute algorithms to find correspondences between images.
+3D Reconstruction: Use PyColmap or similar tools for reconstructing 3D scenes.
+Evaluation: Assess reconstruction quality against ground truth if available.
+Future Improvements
+Implement additional advanced algorithms for feature extraction and matching.
+Explore ensemble methods for better reconstruction accuracy.
+Optimize performance for larger datasets and more complex scenes.
